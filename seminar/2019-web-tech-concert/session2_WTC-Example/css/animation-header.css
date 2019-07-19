@@ -1,0 +1,95 @@
+.app-header {
+  opacity: 0; /* initial 상태 */
+  /* animation: name duration delay timing-function fill-mode; */
+  animation: fade-slide-in-from-left 0.35s 0.3s cubic-bezier(.33,.36,.39,1.44) forwards;
+}
+
+.brand {
+
+  /* 0% */
+  opacity: 0;
+  transform: translateY(-4rem);
+
+  /* 100% */
+  /* 매번 재사용하는 부분 */
+  animation: transform-none 0.35s 0.6s ease-in-out forwards;
+
+}
+
+button[title="메뉴 열기"] {
+  opacity: 0;
+  transform: translateX(4rem);
+  animation: transform-none 0.35s 0.9s ease-in-out forwards;
+}
+
+.ediya-menu__item {
+  opacity: 0;
+  transform: translateY(4rem);
+  animation: transform-none 0.35s 0.9s ease-in-out forwards;
+}
+
+@keyframes transform-none {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* fade-in 이라는 animation 정의 */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* fade-out 이라는 animation 정의 */
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* top 을 above 라고 쓰기도 함 */
+/* 위에 있다가 아래로 내려오는 형태의 animation 정의 */
+@keyframes fade-slide-in-from-top {
+  0% {
+    /* px은 디바이스의 농도에 따라 표현이 달라지기 때문에 rem, vh, %로 상대값을 사용한다. 
+    4rem은 루트 글자 높이의 4배를 의미한다*/
+    transform: translateY(-4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* 위에 있다가 아래로 내려오는 형태의 animation 정의 */
+@keyframes fade-slide-in-from-bottom {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* 위에 있다가 아래로 내려오는 형태의 animation 정의 */
+@keyframes fade-slide-in-from-left {
+  0% {
+    transform: translateX(-4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
