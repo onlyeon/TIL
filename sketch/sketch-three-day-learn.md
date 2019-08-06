@@ -23,11 +23,11 @@
 
 * Union, Subtract, Intersect, Difference가 있고 합쳐지기 이전 도형이 레이어에서 확인 가능하며 더블클릭해 세밀한 점을 수정할 수도 있다
 
-  ![sketch-shapes-01](/Users/heeyeonkang/2_STUDY/TIL/@images/sketch-shapes-01.png)
+  ![sketch-shapes-01](../@images/sketch-shapes-01.png)
 
 * 상단 툴바의 Flatten 기능으로 각개로 존재하는 도형을 하나의 도형으로 만들 수 있다
 
-  ![sketch-shapes-02](/Users/heeyeonkang/2_STUDY/TIL/@images/sketch-shapes-02.png)
+  ![sketch-shapes-02](../@images/sketch-shapes-02.png)
 
 ### 이미지 넣기
 
@@ -38,7 +38,7 @@
 
    - 사각형 도형 그리기 > 오른쪽 패널 Fill 기능 선택 > Fill > Choose image 
 - 도형 사이즈 변경에 맞춰 이미지 변형
-   
+  
 3. 원하는 도형에 이미지 마스크 씌우기
    - 도형 그리기, 이미지 삽입하기 > 도형과 이미지 선택 > 우클릭 마스크 씌우기
    - 마스크된 이미지의 위치 조정 가능
@@ -111,7 +111,7 @@
 
   상세화면 페이지 > 오른쪽 패널 링크 클릭 > Copy and ling 웹 화면으로 공유 가능
 
-###Invision craft 사용하기
+### Invision craft 사용하기
 
 * 인비전 크래프트 다운로드 및 실행
 

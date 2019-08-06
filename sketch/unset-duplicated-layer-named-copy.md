@@ -10,4 +10,4 @@ Preference는 `cmd + ,` 로도 열 수 있다.
 
 Layers 탭의 Duplicating: [ x ] Rename Duplicated Layers를 체크 해제해주면 간단하게 해결된다.
 
-![sketch-copy-in-preferance](/Users/heeyeonkang/2_STUDY/TIL/@images/sketch-copy-in-preferance.png)
+![sketch-copy-in-preferance](../@images/sketch-copy-in-preferance.png)
