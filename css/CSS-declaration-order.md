@@ -34,7 +34,7 @@
    7. white-space 
 5. 기타
    1. 위에 언급되지 않은 나머지 속성들로 폰트의 관련 속성 이후에 선언하며, 기타 속성 내의 선언 순서는 무관함
-   2. 밴더속성과 핵속성은 해당 속성 뒤에 선언한다. 
+   2. 밴더속성과 핵속성은 해당 속성 뒤에 선언
 
 ## Web Standards Darum
 
@@ -60,9 +60,9 @@
 4. Visual (시각 효과)
 5. Misc (기타)
 
-문서의 정상적인 흐름에서 엘리먼트를 없앨 수 있고, 박스 모델 관련 스타일들을 재정의할 수 있기 때문에 포지션 관련 선언이 가장 먼저 옵니다. 박스 모델이 그 다음으로, 해당 엘리먼트의 크기와 위치를 지정하기 떄문이다.
+문서의 정상적인 흐름에서 엘리먼트를 없앨 수 있고, 박스 모델 관련 스타일들을 재정의할 수 있기 때문에 포지션 관련 선언이 가장 먼저 온다. 박스 모델이 그 다음에 오며 해당 엘리먼트의 크기와 위치를 지정한다.
 
- 나머지는 이전의 두 섹션에 영향을 주지 않거나 엘리먼트의 내부에서만 필요한 내용이기 때문에 마지막에 옵니다.
+나머지는 이전의 두 섹션에 영향을 주지 않거나 엘리먼트의 내부에서만 필요한 내용이기 때문에 마지막에 온다.
 
 전체 속성 목록과 순서는 [Bootstrap property order for Stylelint](https://github.com/twbs/stylelint-config-twbs-bootstrap/blob/master/css/index.js) 를 참조하라.
 
@@ -76,11 +76,8 @@
 
 ## 📖 Reference
 
-[NHN 마크업 코딩 컨벤션](https://nuli.navercorp.com/sharing/fe/coding)
-
-[Web Standard Darum](http://darum.daum.net/convention/css/css_convention)
-
-[Code Guide by Mark Otto](https://codeguide.co/#css-declaration-order)
-
-[CSS property order](https://gist.github.com/awkale/ad46e2ade70e833fa178#file-css-order-md)
+* [NHN 마크업 코딩 컨벤션](https://nuli.navercorp.com/sharing/fe/coding)
+* [Web Standard Darum](http://darum.daum.net/convention/css/css_convention)
+* [Code Guide by Mark Otto](https://codeguide.co/#css-declaration-order)
+* [CSS property order](https://gist.github.com/awkale/ad46e2ade70e833fa178#file-css-order-md)
 
