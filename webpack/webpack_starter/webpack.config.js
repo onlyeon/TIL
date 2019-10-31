@@ -14,10 +14,16 @@ module.exports = {
   },
   module: {
     rules: [{
-      loader: 'babel-loader',
-      test: /\.js$/,
-      exclude: /node_modules/
-      // node_modules에 추가된 스크립트는 제외시킨다
-    }]
+        loader: 'babel-loader',
+        test: /\.js$/,
+        exclude: /node_modules/
+        // node_modules에 추가된 스크립트는 제외시킨다
+      },
+      {
+        test: /\.s?css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+        // style-loader가 가장 먼저 와야한다
+      }
+    ]
   }
 };
