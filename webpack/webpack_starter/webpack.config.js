@@ -58,6 +58,20 @@ module.exports = {
           }
           // image-webpack-loader는 이미지 사이즈를 줄여주는 역할을 한다
         ]
+      },
+      {
+        test: /font-awesome\.config\.js/,
+        use: [{
+            loader: 'style-loader'
+          },
+          {
+            loader: 'font-awesome-loader'
+          }
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+        loader: 'url-loader?limit=50000&name=assets/webfonts/[name].[ext]'
       }
     ]
   },
@@ -65,6 +79,10 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: './src/assets/images',
       to: './assets/images/'
-    }])
+    }]),
+    new CopyWebpackPlugin([{
+      from: './src/assets/webfonts/',
+      to: './assets/webfonts/'
+    }]),
   ]
 };

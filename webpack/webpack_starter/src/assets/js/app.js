@@ -10,3 +10,4 @@
 
 import '../css/app.css';
 import '../scss/style.scss'
+import '../css/fontawesome-all.css'
