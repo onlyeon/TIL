@@ -1,5 +1,6 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/assets/js/app.js',
@@ -84,5 +85,14 @@ module.exports = {
       from: './src/assets/webfonts/',
       to: './assets/webfonts/'
     }]),
+    new HtmlWebpackPlugin([{
+      filename: 'index.html',
+      template: 'src/index.html',
+      // src 폴더에 생성된 html을 자동으로 dist폴더에 생성하는 설정
+    }]),
+    new HtmlWebpackPlugin([{
+      filename: 'intro.html',
+      template: 'src/intro.html',
+    }])
   ]
 };
